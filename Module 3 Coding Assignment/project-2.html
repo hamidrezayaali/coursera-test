@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link rel="stylesheet" href="project-2.css">
+</head>
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  
+    <h1> our menu</h1>
+
+    <div class="section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis nisi obcaecati vitae enim, unde blanditiis deleniti perspiciatis saepe maiores quos nesciunt eligendi eos sunt voluptas rerum illum totam adipisci tenetur explicabo, repellendus temporibus. Reiciendis!</p>
+    </div>
+    <div class="section">
+     <p> Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere ipsum quae, culpa architecto, laboriosam itaque soluta accusantium placeat a quo totam quia eum ex voluptatem temporibus omnis vitae pariatur ut explicabo. Iste, quae.</p>
+    </div>
+    <div class="section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt nostrum necessitatibus distinctio praesentium culpa, possimus ad repellat, fuga saepe error, et qui officia veritatis architecto expedita exercitationem similique nam minus velit temporibus perferendis.</p>
+    </div>
+
+    <script>
+      
+      var mybutton = document.getElementById("myBtn");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+</body>
+</html>
